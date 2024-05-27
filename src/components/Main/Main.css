@@ -1,0 +1,68 @@
+.main {
+  @apply flex-1 min-h-lvh pb-[15vh] relative;
+}
+
+.main .nav {
+  @apply flex items-center justify-between text-[22px] p-[20px] text-[#585858];
+}
+
+.main .nav img {
+  @apply w-[40px] rounded-[50%];
+}
+
+.main-container {
+  @apply max-w-[900px] m-auto;
+}
+
+.main .greet {
+  @apply my-[50px] mx-[0px] text-[56px] text-[#c4c7c5] font-[500] p-[20px];
+}
+
+.main .greet span {
+  background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main .cards {
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    @apply grid gap-[15px] p-[20px]
+}
+
+.main .card{
+    @apply h-[200px] p-[15px] bg-[#f0f4f9] rounded-[10px] relative cursor-pointer
+}
+
+.main .card img{
+    @apply w-[35px] p-[5px] absolute bg-white rounded-[20px] bottom-[10px] right-[10px]
+}
+
+.main .card p {
+    @apply text-[#585858] text-[17px]
+}
+
+.main .card:hover {
+    @apply bg-[#dfe4ea]
+}
+
+.main-bottom{
+    @apply absolute bottom-0 w-full max-w-[900px] py-0 px-[20px] m-auto
+}
+
+.search-box {
+    @apply flex  items-center justify-between gap-[20px] bg-[#f0f4f9] py-[10px] px-[20px] rounded-[50px]
+}
+
+.search-box img{
+    @apply w-[24px] cursor-pointer
+}
+
+.search-box input {
+    @apply flex-1 bg-transparent border-none outline-none p-[8px] text-[18px]
+}
+.search-box div {
+    @apply flex items-center gap-[15px]
+}
+.main .bottom-info{
+    @apply text-[13px] my-[15px] mx-auto text-center font-[300]
+}

@@ -1,0 +1,40 @@
+.sidebar {
+  @apply min-h-lvh  inline-flex flex-col justify-between bg-[#f0f4f9] px-[15px] py-[25px];
+}
+.sidebar img {
+  @apply w-[20px];
+}
+
+.sidebar menu {
+  @apply block ml-[10px];
+}
+
+.sidebar .new-chat {
+  color: grey;
+  @apply mt-[50px] inline-flex items-center gap-[10px] py-[10px] px-[15px] rounded-[50px] bg-[#e6eaf1]  text-[14px] cursor-pointer;
+}
+
+.sidebar .recent {
+  @apply flex flex-col;
+}
+
+.sidebar .recent-title {
+  @apply mt-[30px] mb-[20px];
+}
+
+.sidebar .recent-entry {
+  color: #282828;
+  @apply flex items-start gap-[10px] p-[10px] pr-[40px] rounded-[50px] cursor-pointer;
+}
+
+.sidebar .recent-entry:hover {
+  @apply bg-[#e2e6eb];
+}
+
+.sidebar .bottom {
+  @apply flex flex-col 
+}
+
+.sidebar .bottom-item {
+  @apply pr-[10px] cursor-pointer
+}
