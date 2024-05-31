@@ -15,6 +15,7 @@
 }
 
 .sidebar .recent {
+  animation: fadeIn 1.5s;
   @apply flex flex-col;
 }
 
@@ -32,9 +33,15 @@
 }
 
 .sidebar .bottom {
-  @apply flex flex-col 
+  @apply flex flex-col;
 }
 
 .sidebar .bottom-item {
-  @apply pr-[10px] cursor-pointer
+  @apply pr-[10px] cursor-pointer;
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
 }

@@ -84,28 +84,43 @@
 }
 
 .result-data {
-  @apply flex items-start  gap-[20px]
+  @apply flex items-start  gap-[20px];
 }
 
 .loader {
-  @apply w-[100%] flex flex-col gap-[10px]
+  @apply w-[100%] flex flex-col gap-[10px];
 }
 
 .loader hr {
   animation: loader 3s infinite linear;
- @apply rounded-[4px] bg-[#f6f7f8] bg-gradient-to-r from-[#9ed7ff] via-[#ffffff] to-[#9ed7ff] bg-[800px_50px] h-[20px]
+  @apply rounded-[4px] bg-[#f6f7f8] bg-gradient-to-r from-[#9ed7ff] via-[#ffffff] to-[#9ed7ff] bg-[800px_50px] h-[20px];
 }
 
 @keyframes loader {
-  0%{
+  0% {
     background-position: -800px 0px;
   }
-  100%{
+  100% {
     background-position: 800px 0px;
   }
-  
 }
 
-.result-data p{
-  @apply text-[17px] font-[300] leading-[1.8]
+.result-data p {
+  @apply text-[17px] font-[300] leading-[1.8];
+}
+
+@media (max-width: 600px) {
+  .main-bottom input {
+    flex: none;
+    width: 150px;
+  }
+  .main-bottom img {
+    width: 20px;
+  }
+  .search-box {
+    padding: 5px 10px;
+  }
+  .search-box div {
+    gap: 5px;
+  }
 }
